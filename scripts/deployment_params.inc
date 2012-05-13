@@ -6,10 +6,11 @@
 
 ini_set ( "display_errros", 1 );
 ini_set ( "error_reporting", E_ALL );
-
+ini_set ("ZS_BASE_URL","D:\php\PHPnow-1.5.6\htdocs\tutorial");
 set_include_path ( get_include_path () . PATH_SEPARATOR . dirname ( __FILE__ ) );
 
 // get the env vars
+
 $baseUrl = getenv ( "ZS_BASE_URL" );
 if (! $baseUrl) {
 	echo ("ZS_BASE_URL env var undefined");
