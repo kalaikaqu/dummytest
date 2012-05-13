@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>demo</title>
+<script type="text/javascript" src="js/ajaxRequest.js"></script>
+<script type="text/javascript">
+	var options={
+			method:'GET',
+			parameters:'Name=Robin',
+			headers:{
+				Sex:'male',
+				RequestBy:'ajaxRequest'
+					},
+		onLoading:function(){
+			document.body.innerHTML += '<div>Now loading...</div>';
+		},
+		onComplete:function(){
+			document.body.innerHTML += '<div>Loading complete.</div>';
+		},
+		onSuccess:function(){
+			document.body.innerHTML += '<div>Request success.</div>';			
+		},
+		onFailure:function(){
+			document.body.innerHTML += '<div>Request failure.</div>';
+		}
+	}
+	window.onload = function()
+	{
+		ajaxRequest('services/demo.php',options);
+	
+	}
+</script>
+</head>
+<body>
+	
+</body>
+</html>

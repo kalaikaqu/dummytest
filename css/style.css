@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+*{
+	padding:0;
+	margin:0;
+}
+html{
+	background-color:#eee;
+	height:100%;
+}
+body{
+	padding:15px;
+	font-size:12px;
+	width:500px;
+	background-color:#fff;
+	height:100%;
+	font-famliy:Tahmoa;
+	border-left:20px solid #ccc;
+}
+ul{
+	list-style:none;
+	border-top:1px solid #999;
+	height:350px;
+	overflow-x:auto;
+	overflow-y:scroll;	
+}
+span{
+	font-weight:bold;
+	font-size:12px;	
+}
+span.date{
+	margin-left:10px;
+	font-weight:normal;
+	font-size:11px;
+}
+li{
+	border-botom:1px dashed #666;
+	line-height:20px;
+}
+form{
+	margin-top:10px;
+	border-top:1px solid #999;
+}
+label{
+	display:block;
+	line-height:20px;
+	font-weight:bold;
+	cursor:pointer;
+	background-color:#999;
+	color:#fff;
+	margin:3px; 0;
+	padding-left:5px;
+	width:100%;
+}
+#txtName,#txtContent{
+	width:100%;
+	font-size:12px;
+}
+#btnSubmit{
+	display:block;
+	margin-top:3px;
+	border:1px solid #666;
+	pading:2px 5px;
+	width:100%
+}
+.msgBox{
+	font-size:12px;
+}

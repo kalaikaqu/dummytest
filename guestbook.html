@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<script type="text/javascript" src="js/ajaxRequest.js"></script>
+<script type="text/javascript" src="js/guestbook.js"></script>
+</head>
+<body>
+	<h1>Guest Book<span id="loadingMsg" style="display:none;" class="msgBox">(loading...)</span></h1>
+	<ul id="msgList">
+	</ul>
+	<form name="fmMsg" id="fmMsg" action="?" method="post">
+		<h2>Message<span id="submitMsg" style="display:none;" class="msgBox">(loading...)</span></h2>
+		<label for="txtName">name</label>
+		<input name="txtName" type="text" id="txtName" value="guest" onfocus="this.select();"/>
+		<label for="txtContent">Message</label>
+		<textarea name="txtContent" rows="4" id="txtContent" onfocus="this.select();">something to say...</textarea>
+		<input type="button" value="click here to submit your message!" id="btnSubmit" disabled="disabled" />
+	</form>
+</body>
+</html>
